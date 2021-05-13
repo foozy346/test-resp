@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title> hello, mate!</title>
+    <script>
+        function greet()
+        {
+            let name = document.querySelector('#name').value;
+          //  alert('hi, '+name+'!');
+            document.querySelector('#result').innerHTML='hi, ' + name + '!';
+        }
+    </script>
+</head>
+<body>
+    <h1 style="font-size: larger;"> hello, world! </h1>
+    <form onsubmit="greet(); return false;">
+        <input type="text" id="name">
+    <input type="submit">
+    </form>
+    <div id="result">
+        .........
+    </div>
+</body>
+</html>
